@@ -1,0 +1,99 @@
+/* ======= Contact Section ======= */
+.contact {
+    padding: 60px 0;
+    background-color: #343a40;
+    /* Dark background */
+    color: white;
+}
+
+.contact .section-title h2 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+.contact .section-title h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    color: #ffe5e5;
+}
+
+.contact .info {
+    background-color: #3b3b3b;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact .info .address,
+.contact .info .email,
+.contact .info .phone {
+    margin-bottom: 20px;
+}
+
+.contact .info h4 {
+    color: white;
+}
+
+.contact .info p {
+    color: white;
+    font-size: 16px;
+}
+
+.contact form {
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #3b3b3b;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact form .form-group {
+    margin-bottom: 15px;
+}
+
+.contact form .form-control {
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.contact form button {
+    background-color: #9370DB;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact form button:hover {
+    background-color: #5a5a5a;
+}
+
+.contact form .sent-message {
+    color: green;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.contact form .loading {
+    color: orange;
+    font-size: 18px;
+}
+
+.contact form .error-message {
+    color: red;
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .contact .row {
+        flex-direction: column;
+    }
+
+    .contact .col-lg-5,
+    .contact .col-lg-7 {
+        width: 100%;
+    }
+}

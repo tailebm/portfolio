@@ -1,0 +1,88 @@
+/* Mise en page par défaut (pour les grands écrans, comme les PC) */
+.app-container {
+  display: flex;
+  height: 100vh;
+  /* Utilise toute la hauteur de la fenêtre */
+}
+
+/* Le conteneur du contenu (Hero, etc.) */
+.content-container {
+  flex-grow: 1;
+  /* Prend tout l'espace restant à droite du header */
+  padding-left: 250px;
+  /* Donne un peu d'espace à gauche pour éviter le chevauchement avec le header */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Optionnel: Styles supplémentaires pour centrer le contenu */
+.content-container>* {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* loader */
+.loader-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #1e1e1e;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.dots {
+  display: flex;
+  gap: 8px;
+}
+
+.dots span {
+  width: 10px;
+  height: 10px;
+  background-color: #3498db;
+  border-radius: 50%;
+  display: block;
+}
+
+/* Media queries pour les écrans de taille moyenne */
+@media (max-width: 1200px) {
+  .content-container {
+    padding-left: 200px;
+    /* Réduire la largeur du header sur les écrans plus petits */
+  }
+
+  #header {
+    width: 200px;
+    /* Réduire la largeur du header */
+  }
+}
+
+/* Media queries pour les écrans de taille petite (tablettes et mobiles) */
+@media (max-width: 768px) {
+
+  /* Mise en page verticale pour les écrans plus petits */
+  .app-container {
+    flex-direction: column;
+    /* Le header et le contenu s'empilent verticalement */
+  }
+
+  #header {
+    width: 100%;
+    /* Le header prend toute la largeur de l'écran */
+    height: auto;
+    /* Laisse le header prendre la hauteur automatique */
+    position: relative;
+    /* Enlève la position fixe pour qu'il se place au-dessus du contenu */
+  }
+
+  .content-container {
+    padding-left: 0;
+    /* Supprime le padding à gauche */
+    margin-top: 20px;
+    /* Ajoute un peu d'espace entre le header et le contenu */
+  }
+}

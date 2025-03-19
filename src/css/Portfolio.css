@@ -1,0 +1,136 @@
+/* ====== Portfolio Section ====== */
+.portfolio {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+}
+
+/* Section title */
+.section-title h2 {
+    font-size: 32px;
+    color: #9370DB;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Portfolio Titles */
+.portfolio-item h4 {
+    font-size: 22px;
+    font-family: 'Playfair Display', serif;
+    color: #9370DB;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.portfolio-item p {
+    font-size: 16px;
+    color: #5a5a5a;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Filter menu */
+#portfolio-filters {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+#portfolio-filters li {
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #5a5a5a;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+#portfolio-filters .filter-active,
+#portfolio-filters li:hover {
+    background-color: #9370DB;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Portfolio items */
+.portfolio-item {
+    margin-bottom: 30px;
+    opacity: 0;
+    /* Initially hidden */
+    transform: translateY(50px);
+    /* Start from below */
+    animation: slide-up 0.5s ease forwards;
+    /* Animation to slide up */
+    transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
+
+/* Keyframes for slide-up animation */
+@keyframes slide-up {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Portfolio card styling */
+.portfolio-wrap {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-wrap:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-wrap img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.portfolio-links {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.portfolio-wrap:hover .portfolio-links {
+    opacity: 1;
+}
+
+.portfolio-links a {
+    color: white;
+    background-color: #9370DB;
+    padding: 10px 15px;
+    border-radius: 50%;
+    margin: 0 5px;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.portfolio-links a:hover {
+    background-color: #5a5a5a;
+}
+
+/* Responsive Adjustments */
+
+/* Large screens */
+/* Responsive design */
+@media (max-width: 768px) {
+    .portfolio-item {
+        width: 100%;
+    }
+}

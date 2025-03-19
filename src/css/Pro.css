@@ -1,0 +1,104 @@
+/* ====== Pro Section Styles ====== */
+.skills {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+}
+
+/* Section Titles */
+.section-title h2 {
+    font-size: 32px;
+    color: #9370DB;
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Titre en néon */
+.feure5 {
+    font-size: 28px;
+    color: #9370DB;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Cards */
+.resume-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    /* espace entre les cartes */
+}
+
+.resume-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: calc(50% - 10px);
+    /* Remplace 45% par calc pour ajuster avec l'espacement */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resume-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.resume-content {
+    display: flex;
+    align-items: center;
+}
+
+.resume-icon {
+    font-size: 30px;
+    color: #9370DB;
+    margin-right: 20px;
+}
+
+.resume-meta h4 {
+    font-size: 24px;
+    color: #5a5a5a;
+}
+
+.resume-meta h5,
+.resume-meta h6 {
+    font-size: 18px;
+    color: #9370DB;
+}
+
+.resume-text {
+    margin-top: 20px;
+}
+
+.resume-text p {
+    font-size: 16px;
+    color: #5a5a5a;
+}
+
+.valo {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.valo .text {
+    color: white;
+    background-color: #9370DB;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.valo .text:hover {
+    background-color: #5a5a5a;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .resume-card {
+        width: 100%;
+        /* Sur petits écrans, les cartes s'empilent */
+    }
+}

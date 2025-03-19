@@ -1,0 +1,75 @@
+/* ====== Veilles Section ====== */
+.services {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+}
+
+/* Section Title */
+.section-title h2 {
+    font-size: 32px;
+    color: #9370DB;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+.section-title h4 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.section-title p {
+    font-size: 16px;
+    color: #5a5a5a;
+    text-align: center;
+}
+
+/* Icon Box */
+.icon-box {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.icon-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.icon-box .icon {
+    font-size: 40px;
+    color: #9370DB;
+    margin-bottom: 20px;
+}
+
+.icon-box .title a {
+    font-size: 20px;
+    color: #9370DB;
+    transition: color 0.3s ease;
+}
+
+.icon-box .title a:hover {
+    color: #5a5a5a;
+}
+
+.icon-box .description {
+    font-size: 16px;
+    color: #5a5a5a;
+    text-align: justify;
+}
+
+.date {
+    color: #9370DB;
+    font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .icon-box {
+        margin-bottom: 30px;
+    }
+}

@@ -1,0 +1,189 @@
+/* ======= Styles pour la section A Propos ======= */
+.about {
+    padding: 60px 0;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    color: #9370DB;
+    /* Violet professionnel */
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: 'Playfair Display', serif;
+}
+
+.cadre_presentation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.photo_profile {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    border: 5px solid #9370DB;
+    /* Bordure violet professionnel */
+}
+
+.content h3 {
+    color: #9370DB;
+    /* Violet professionnel */
+    font-size: 24px;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 16px;
+    color: #5a5a5a;
+    /* Gris doux */
+    line-height: 1.8;
+}
+
+.font-italic {
+    font-style: italic;
+}
+
+/* Style de base du bouton CV */
+#cv-button {
+    display: inline-block;
+    background-color: #9370DB;
+    /* Violet professionnel */
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    /* Transition douce pour les interactions */
+    position: relative;
+    overflow: hidden;
+    /* Pour cacher les effets en dehors du bouton */
+}
+
+/* Effet de survol (hover) */
+#cv-button:hover {
+    background-color: #5a5a5a;
+    /* Gris au survol */
+    color: #fff;
+    transform: translateY(-3px);
+    /* Effet de levée lors du survol */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    /* Ombre pour l'effet de levée */
+}
+
+/* Effet de clic (active) */
+#cv-button:active {
+    transform: translateY(1px);
+    /* Effet d'enfoncement au clic */
+    box-shadow: none;
+}
+
+/* Effet d'animation lors du survol */
+#cv-button::before {
+    content: '';
+    position: absolute;
+    left: -100%;
+    top: 0;
+    width: 300%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    transform: skewX(-20deg);
+    transition: left 0.5s ease;
+}
+
+/* Animation au survol */
+#cv-button:hover::before {
+    left: 100%;
+}
+
+/* EMOJIS */
+/* Effet de rebond pour les emojis */
+.bounce-emoji {
+    display: inline-block;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-15px);
+    }
+
+    60% {
+        transform: translateY(-7px);
+    }
+}
+
+/* Effet de salut (wave) */
+.wave-emoji {
+    display: inline-block;
+    animation: wave 2s infinite;
+    transform-origin: 70% 70%;
+    /* Point d'ancrage pour la rotation */
+}
+
+@keyframes wave {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    10% {
+        transform: rotate(14deg);
+    }
+
+    20% {
+        transform: rotate(-8deg);
+    }
+
+    30% {
+        transform: rotate(14deg);
+    }
+
+    40% {
+        transform: rotate(-4deg);
+    }
+
+    50% {
+        transform: rotate(10deg);
+    }
+
+    60%,
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/* Effet de rotation pour les emojis */
+.laptop-emoji,
+.graduation-emoji {
+    display: inline-block;
+    animation: rotate 3s infinite ease-in-out;
+}
+
+@keyframes rotate {
+
+    0%,
+    100% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(10deg);
+    }
+}
