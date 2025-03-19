@@ -183,6 +183,17 @@ const Portfolio = () => {
             languages: "Java, phpMyAdmin",
             link: "https://github.com/BTS-SIO-projects/adminaimy",
             imgLink: "/images/adminaimy/adminaimy.png",
+        },
+        {
+            id: 16,
+            title: "SITE INTERNET - LIBRAIRIE",
+            category: "filter-internet",
+            date: "2025",
+            image: "/images/librairie/librairie.png",
+            description: "Réalisation d'un site internet de gestion des livres d'une librairie.",
+            languages: "PHP, mysql",
+            link: "/images/librairie/librairie.pdf",
+            imgLink: "/images/librairie/librairie.png",
         }
     ];
 
