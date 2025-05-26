@@ -1,0 +1,105 @@
+/* ====== Section Skills Styles ====== */
+.section-bg {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+}
+
+/* Section Titles */
+.section-title h2 {
+    font-size: 32px;
+    color: #9370DB;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 20px;
+}
+
+.section-title p {
+    color: #5a5a5a;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Style pour les certifications */
+.certification {
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certification:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* ====== Certifications Styles ====== */
+.certification-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Ombre légère */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certification-img:hover {
+    transform: scale(1.05);
+    /* Zoom au survol */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Ombre plus marquée au survol */
+}
+
+/* Limiter la taille des images pour qu'elles ne prennent pas tout l'espace */
+.row.skills-content .col-lg-6 {
+    padding: 15px;
+    /* Espacement entre les images */
+}
+
+@media (min-width: 992px) {
+    .certification-img {
+        max-width: 80%;
+        /* Limiter la taille à 80% pour les grands écrans */
+        margin: 0 auto;
+    }
+}
+
+
+/* Styles pour les cartes de compétences */
+.skills-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Images des compétences */
+.skills-img img {
+    max-width: 80px;
+    margin-bottom: 10px;
+}
+
+/* Noms des compétences */
+.skills-name p {
+    font-size: 16px;
+    color: #5a5a5a;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .skills-img img {
+        max-width: 60px;
+    }
+
+    .skills-name p {
+        font-size: 14px;
+    }
+}

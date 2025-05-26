@@ -1,0 +1,74 @@
+/* ====== Section Tools Styles ====== */
+.tools-part {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+    /* Fond clair pour la section */
+}
+
+/* Section Titles */
+.section-title h2 {
+    font-size: 32px;
+    color: #9370DB;
+    /* Marron doux */
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+.section-title p {
+    color: #5a5a5a;
+    /* Gris doux */
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Styles pour les cartes des outils */
+.skills-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Ombre légère */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.skills-card:hover {
+    transform: translateY(-5px);
+    /* Effet de survol (élévation) */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Ombre plus forte au survol */
+}
+
+/* Images des outils */
+.skills-img img {
+    max-width: 80px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* Noms des outils */
+.skills-name p {
+    font-size: 16px;
+    color: #5a5a5a;
+    /* Gris doux */
+}
+
+/* Effet sur l'image au survol */
+.skills-card:hover .skills-img img {
+    transform: scale(1.1);
+    /* Légère augmentation de la taille des icônes au survol */
+}
+
+/* Media Queries pour responsivité */
+@media (max-width: 768px) {
+    .skills-img img {
+        max-width: 60px;
+    }
+
+    .skills-name p {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,119 @@
+#hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #c1adea, #a9b8e8);
+    /* Dégradé élégant */
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-title h1 {
+    font-size: 4.5em;
+    color: #4b382a;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    margin: 0;
+}
+
+.hero-subtitle h3 {
+    font-size: 1.7em;
+    color: #555;
+    font-family: 'Arial', sans-serif;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+
+/* === Animation du fade-in du Hero === */
+@keyframes fadeInEffect {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* === Titre du Hero === */
+.hero-title h1 {
+    font-size: 4.5em;
+    color: #4b382a;
+    /* Couleur brun chocolat */
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    /* Ombre légère pour effet professionnel */
+    margin: 0;
+    animation: slideIn 1s ease-out;
+    /* Animation d'entrée */
+}
+
+/* === Animation du titre === */
+@keyframes slideIn {
+    0% {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* === Sous-titre du Hero === */
+.hero-subtitle h3 {
+    font-size: 1.7em;
+    color: #555;
+    /* Couleur plus douce */
+    font-family: 'Arial', sans-serif;
+    font-weight: 400;
+    margin-top: 20px;
+    animation: fadeUp 1.5s ease-in-out 0.5s forwards;
+    /* Animation retardée */
+}
+
+/* === Animation du sous-titre === */
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* === Animation sur les lettres === */
+.m {
+    display: inline-block;
+    animation: letterEffect 0.8s ease forwards;
+    opacity: 0;
+}
+
+/* === Effet sur chaque lettre === */
+@keyframes letterEffect {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.m:nth-child(odd) {
+    animation-delay: 0.1s;
+}
+
+.m:nth-child(even) {
+    animation-delay: 0.2s;
+}

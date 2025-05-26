@@ -1,0 +1,76 @@
+/* ====== BTS Section Styles ====== */
+.facts {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+}
+
+/* Titre principal */
+.section-title h2 {
+    font-size: 32px;
+    color: #9370DB;
+    /* Marron doux */
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 20px;
+}
+
+.section-title p {
+    color: #5a5a5a;
+    /* Gris doux */
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Style pour les options SISR et SLAM */
+.bts_sisr,
+.bts_slam {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Ombre légère */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bts_sisr:hover,
+.bts_slam:hover {
+    transform: translateY(-5px);
+    /* Légère levée au survol */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Ombre plus marquée au survol */
+}
+
+/* Titres des options */
+.bts_sisr h4,
+.bts_slam h4 {
+    font-size: 24px;
+    color: #9370DB;
+    /* Marron doux */
+    margin-bottom: 15px;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Listes des métiers */
+.bts_sisr ul,
+.bts_slam ul {
+    padding-left: 20px;
+    color: #5a5a5a;
+}
+
+.bts_sisr ul li,
+.bts_slam ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.bts_sisr ul li i,
+.bts_slam ul li i {
+    color: #9370DB;
+    margin-right: 5px;
+}
+
+/* Transition pour les animations AOS */
+[data-aos] {
+    transition: all 0.6s ease;
+}
